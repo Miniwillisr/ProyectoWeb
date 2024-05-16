@@ -1,0 +1,16 @@
+nav{
+    overflow: hidden;
+    background-color: yellow;
+    top: 0%;
+    width: 100%;
+}
+
+nav ul a{
+    background-color: white;
+    display: block;
+    list-style: none;
+    padding: 16px;
+    border: 1px solid rgb(110, 9, 243);
+    font-family: sans-serif;
+    text-decoration: none; /* Cambia el tecto para que no parezca link*/
+}
