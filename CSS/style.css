@@ -5,6 +5,11 @@ nav{
     width: 100%;
 }
 
+nav ul{
+    display: flex;
+    justify-content: right;
+}
+
 nav ul a{
     background-color: white;
     display: block;
@@ -13,4 +18,16 @@ nav ul a{
     border: 1px solid rgb(110, 9, 243);
     font-family: sans-serif;
     text-decoration: none; /* Cambia el tecto para que no parezca link*/
+}
+
+h1 {
+    text-align: center;
+}
+
+p{
+    margin-left: 500px;
+    margin-right: 400px;
+    text-align: justify;
+    color: darkslategray;
+    font-size: 18px;
 }
