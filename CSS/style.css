@@ -1,33 +1,100 @@
-nav{
+/* CSS Global */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+ 
+body {
+    display: flex;
+    flex-direction: column;
+}
+ 
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente */
+    padding: 10px;
+    background-color: yellow; /* Cambia el color de fondo a amarillo */
+}
+ 
+/* Navigation */
+nav {
     overflow: hidden;
-    background-color: yellow;
-    top: 0%;
     width: 100%;
 }
-
-nav ul{
+ 
+nav ul {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-
-nav ul a{
+ 
+nav ul a {
     background-color: white;
     display: block;
-    list-style: none;
     padding: 16px;
+    margin: 5px;
+    border-radius: 8px;
     border: 1px solid rgb(110, 9, 243);
     font-family: sans-serif;
-    text-decoration: none; /* Cambia el tecto para que no parezca link*/
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
 }
-
+ 
+nav ul a:hover {
+    background-color: #007BFF;
+    color: white;
+}
+ 
+/* Main Content */
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
 h1 {
-    text-align: center;
+    text-align: justify; /* Justifica el texto dentro de h1 */
+    max-width: 800px; /* Establece un ancho máximo para evitar que las palabras sobresalgan */
+    margin: 0 auto 20px; /* 0 en la parte superior, auto a la izquierda y derecha para centrar, y 20px en la parte inferior */
+    padding: 0 20px; /* Agrega espacio a la izquierda y a la derecha del texto */
 }
-
-p{
-    margin-left: 500px;
-    margin-right: 400px;
+ 
+h1 + p {
+    margin-top: 10px; /* Aumenta la distancia entre h1 y su p siguiente */
+}
+ 
+h1 + p + h1 {
+    margin-top: 40px; /* Aumenta la distancia entre el primer par h1 y p y el segundo h1 */
+}
+ 
+p {
+    margin-left: 20%;
+    margin-right: 20%;
     text-align: justify;
     color: darkslategray;
     font-size: 18px;
+}
+ 
+/* Footer */
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-top: 5px solid #007BFF;
+    margin-top: auto; /* Asegura que el pie de página se mantenga en la parte inferior */
 }
